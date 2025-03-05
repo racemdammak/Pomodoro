@@ -75,12 +75,6 @@ nav {
 
 #timer-display {
     position: absolute;
-<<<<<<< HEAD
-    left: 15%;
-    top: 100px;
-}
-
-=======
     left: 50%;
     top: 100px;
     transform: translateX(-50%);
@@ -89,7 +83,6 @@ nav {
 }
 
 
->>>>>>> 22f48d6 (new updates)
 #timer-display h1 {
     font-family: "Handjet", serif;
     color: #674636;

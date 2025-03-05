@@ -1,12 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
-<<<<<<< HEAD
-let win; // Declare win globally
-
-function createwindow() {
-    win = new BrowserWindow({ // Assign win without 'const'
-=======
 let win;
 let timerInterval;
 let timeLeft = 50 * 60; // 50 minutes
@@ -15,16 +9,11 @@ let startTime;
 
 function createWindow() {
     win = new BrowserWindow({
->>>>>>> 22f48d6 (new updates)
         width: 450,
         height: 520,
         frame: false,
         resizable: false,
-<<<<<<< HEAD
-        maximizable:false,
-=======
         maximizable: false,
->>>>>>> 22f48d6 (new updates)
         icon: path.join(__dirname, 'pomodoro.ico'),
         webPreferences: {
             nodeIntegration: true,
@@ -40,16 +29,6 @@ function createWindow() {
 }
 
 ipcMain.on("manualMinimize", () => {
-<<<<<<< HEAD
-    if (win) win.minimize(); // Check if win exists
-});
-
-ipcMain.on("manualClose", () => {
-    if (win) win.close(); // Close the window instead of quitting the app
-});
-
-app.whenReady().then(createwindow);
-=======
     if (win) win.minimize();
 });
 
@@ -90,7 +69,6 @@ ipcMain.on("resetTimer", (event) => {
 });
 
 app.whenReady().then(createWindow);
->>>>>>> 22f48d6 (new updates)
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit();
