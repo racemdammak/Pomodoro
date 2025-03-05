@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", serif;
+}
+
+body{
+    background-color: #FADA7A;
+    padding: 1.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    -webkit-app-region: drag;
+    width: 100%;
+    height: 50px;
+    background: #FADA7A;
+    padding: 10px;
+}
+
+.nav-buttons img {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+}
+
+#title {
+    -webkit-app-region: drag;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: #674636;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+}
+
+#minimize {
+    position: absolute;
+    top: 10px;
+    right: 55px;
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+}
+
+#timer-box {
+    width: 400px;
+    height: 450px;
+    border: 3px solid #F0A04B; 
+    background-color: #FCE7C8;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50px;
+}
+
+#timer-box img{
+    width: 400px;
+    height: 450px;
+    opacity: 0.8;
+}
+
+
+#timer-display {
+    position: absolute;
+<<<<<<< HEAD
+    left: 15%;
+    top: 100px;
+}
+
+=======
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    width: max-content; /* Ensures it takes only the required space */
+    text-align: center;
+}
+
+
+>>>>>>> 22f48d6 (new updates)
+#timer-display h1 {
+    font-family: "Handjet", serif;
+    color: #674636;
+    font-size: 150px;
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    transform: translateX(-50%);
+}
+
+#options img {
+    width: 40%;
+    cursor: pointer;
+}
